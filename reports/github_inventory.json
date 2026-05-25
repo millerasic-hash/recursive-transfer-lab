@@ -1,0 +1,45 @@
+{
+  "repo_count": 2,
+  "suggestion_count": 2,
+  "suggestions": [
+    {
+      "repo": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "age_days": 0,
+      "is_private": false,
+      "is_fork": false,
+      "topics": [
+        "automation",
+        "experiment",
+        "github",
+        "knowledge-graph",
+        "openalex",
+        "recursive-agent",
+        "research-software",
+        "transfer-learning"
+      ],
+      "actions": [
+        "add_license_or_mark_private",
+        "consider_citation_cff"
+      ]
+    },
+    {
+      "repo": "millerasic-hash/tptd",
+      "url": "https://github.com/millerasic-hash/tptd",
+      "age_days": 3,
+      "is_private": false,
+      "is_fork": false,
+      "topics": [
+        "archive",
+        "automation",
+        "experiment",
+        "research-artifacts",
+        "tptd"
+      ],
+      "actions": [
+        "add_license_or_mark_private",
+        "consider_citation_cff"
+      ]
+    }
+  ]
+}

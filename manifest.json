@@ -1,0 +1,26 @@
+{
+  "schema": "recursive-transfer-lab-manifest-v1",
+  "project": "recursive-transfer-lab",
+  "created_at": "2026-05-26",
+  "truth_surfaces": [
+    "manifest.json",
+    "progress.json",
+    "generation-status.md",
+    "reports/loop/state.json",
+    "reports/loop/latest_summary.md"
+  ],
+  "entrypoints": [
+    "README.md",
+    "scripts/run_loop.py",
+    "docs/LOOP_PROTOCOL.md",
+    "docs/GITHUB_ORGANIZATION.md",
+    "docs/NEXT_ACTIONS.md",
+    "LICENSE",
+    "CITATION.cff"
+  ],
+  "latest_run": "reports/loop/latest_summary.md",
+    "remote_github_created": true,
+    "github_url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+    "automation_id": "recursive-transfer-loop",
+    "mode": "github-published"
+}

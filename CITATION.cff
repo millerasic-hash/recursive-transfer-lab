@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: Recursive Transfer Lab
+message: If this experiment helps your research workflow, cite the repository and its reports.
+type: software
+authors:
+  - family-names: Miller
+    given-names: Asic
+repository-code: "https://github.com/millerasic-hash/recursive-transfer-lab"
+abstract: "A small automation experiment linking open scholarly metadata and GitHub repository signals to find cross-domain transfer candidates."
+license: MIT
+

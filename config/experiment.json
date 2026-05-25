@@ -1,0 +1,86 @@
+{
+  "schema": "recursive-transfer-lab-v1",
+  "github": {
+    "owner": "millerasic-hash",
+    "repo_limit": 100
+  },
+  "openalex": {
+    "per_query": 5,
+    "filter": "type:article,primary_location.source.type:journal,is_oa:true,from_publication_date:2020-01-01",
+    "queries": [
+      {
+        "id": "agent-recursive-control",
+        "label": "Agent recursive control",
+        "search": "recursive feedback control autonomous agents verification"
+      },
+      {
+        "id": "knowledge-graph-transfer",
+        "label": "Knowledge graph transfer",
+        "search": "knowledge graph transfer learning cross disciplinary discovery"
+      },
+      {
+        "id": "literature-based-discovery",
+        "label": "Literature based discovery",
+        "search": "literature based discovery biomedical knowledge graph hypothesis generation"
+      },
+      {
+        "id": "software-reproducibility",
+        "label": "Research software reproducibility",
+        "search": "research software reproducibility open source github citation"
+      },
+      {
+        "id": "failure-mode-feedback",
+        "label": "Failure mode feedback",
+        "search": "failure mode feedback loop complex systems verification"
+      }
+    ]
+  },
+  "signals": {
+    "methods": [
+      "feedback loop",
+      "control",
+      "knowledge graph",
+      "transfer learning",
+      "literature based discovery",
+      "verification",
+      "reproducibility",
+      "benchmark",
+      "citation",
+      "graph",
+      "automation",
+      "agent"
+    ],
+    "failure_modes": [
+      "hallucination",
+      "drift",
+      "overfitting",
+      "reproducibility",
+      "dependency",
+      "stale",
+      "missing evidence",
+      "feedback delay",
+      "metric gaming"
+    ],
+    "repo_signals": [
+      "README",
+      "CITATION",
+      "license",
+      "tests",
+      "workflow",
+      "actions",
+      "benchmark",
+      "dataset",
+      "paper",
+      "doi",
+      "openalex",
+      "github"
+    ]
+  },
+  "frequency_policy": {
+    "bootstrap": "30 minutes",
+    "active_learning": "2 hours",
+    "stable": "24 hours",
+    "maintenance": "7 days"
+  }
+}
+

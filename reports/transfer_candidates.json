@@ -1,0 +1,278 @@
+[
+  {
+    "type": "paper_paper_bridge",
+    "confidence": 0.57,
+    "shared_signals": [
+      "control"
+    ],
+    "paper_count": 2,
+    "domains": [
+      "agent-recursive-control",
+      "failure-mode-feedback"
+    ],
+    "examples": [
+      {
+        "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+        "doi": "https://doi.org/10.1186/s40537-021-00444-8",
+        "url": "https://doi.org/10.1186/s40537-021-00444-8",
+        "query_label": "Agent recursive control"
+      },
+      {
+        "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+        "doi": "https://doi.org/10.1109/access.2020.2970143",
+        "url": "https://doi.org/10.1109/access.2020.2970143",
+        "query_label": "Failure mode feedback"
+      }
+    ],
+    "hypothesis": "The method signal 'control' appears across multiple query domains.",
+    "next_verification": "Check whether the papers cite each other or are rediscovering the same structure."
+  },
+  {
+    "type": "paper_paper_bridge",
+    "confidence": 0.57,
+    "shared_signals": [
+      "graph"
+    ],
+    "paper_count": 2,
+    "domains": [
+      "agent-recursive-control",
+      "knowledge-graph-transfer"
+    ],
+    "examples": [
+      {
+        "title": "Toward Causal Representation Learning",
+        "doi": "https://doi.org/10.1109/jproc.2021.3058954",
+        "url": "https://doi.org/10.1109/jproc.2021.3058954",
+        "query_label": "Agent recursive control"
+      },
+      {
+        "title": "Advances and Open Problems in Federated Learning",
+        "doi": "https://doi.org/10.1561/2200000083",
+        "url": "https://doi.org/10.1561/2200000083",
+        "query_label": "Knowledge graph transfer"
+      }
+    ],
+    "hypothesis": "The method signal 'graph' appears across multiple query domains.",
+    "next_verification": "Check whether the papers cite each other or are rediscovering the same structure."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "paper"
+    ],
+    "paper": {
+      "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+      "doi": "https://doi.org/10.1186/s40537-021-00444-8",
+      "url": "https://doi.org/10.1186/s40537-021-00444-8",
+      "query_label": "Agent recursive control"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "automation"
+    ],
+    "paper": {
+      "title": "Artificial Intelligence and Management: The Automation–Augmentation Paradox",
+      "doi": "https://doi.org/10.5465/amr.2018.0072",
+      "url": "https://doi.org/10.5465/amr.2018.0072",
+      "query_label": "Agent recursive control"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "automation"
+    ],
+    "paper": {
+      "title": "Artificial Intelligence and Management: The Automation–Augmentation Paradox",
+      "doi": "https://doi.org/10.5465/amr.2018.0072",
+      "url": "https://doi.org/10.5465/amr.2018.0072",
+      "query_label": "Agent recursive control"
+    },
+    "repo": {
+      "name": "millerasic-hash/tptd",
+      "url": "https://github.com/millerasic-hash/tptd",
+      "description": "Personal TPTD experiment archive and lightweight research artifacts."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "paper"
+    ],
+    "paper": {
+      "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+      "doi": "https://doi.org/10.1109/access.2021.3140175",
+      "url": "https://doi.org/10.1109/access.2021.3140175",
+      "query_label": "Agent recursive control"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "graph"
+    ],
+    "paper": {
+      "title": "Toward Causal Representation Learning",
+      "doi": "https://doi.org/10.1109/jproc.2021.3058954",
+      "url": "https://doi.org/10.1109/jproc.2021.3058954",
+      "query_label": "Agent recursive control"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "graph"
+    ],
+    "paper": {
+      "title": "Advances and Open Problems in Federated Learning",
+      "doi": "https://doi.org/10.1561/2200000083",
+      "url": "https://doi.org/10.1561/2200000083",
+      "query_label": "Knowledge graph transfer"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "paper"
+    ],
+    "paper": {
+      "title": "Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence",
+      "doi": "https://doi.org/10.1016/j.inffus.2023.101805",
+      "url": "https://doi.org/10.1016/j.inffus.2023.101805",
+      "query_label": "Knowledge graph transfer"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "paper"
+    ],
+    "paper": {
+      "title": "Evolutionary algorithms and their applications to engineering problems",
+      "doi": "https://doi.org/10.1007/s00521-020-04832-8",
+      "url": "https://doi.org/10.1007/s00521-020-04832-8",
+      "query_label": "Knowledge graph transfer"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "paper"
+    ],
+    "paper": {
+      "title": "Reporting animal research: Explanation and elaboration for the ARRIVE guidelines 2.0",
+      "doi": "https://doi.org/10.1371/journal.pbio.3000411",
+      "url": "https://doi.org/10.1371/journal.pbio.3000411",
+      "query_label": "Literature based discovery"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "github"
+    ],
+    "paper": {
+      "title": "<i>PRISMA2020</i> : An R package and Shiny app for producing PRISMA 2020‐compliant flow diagrams, with interactivity for optimised digital transparency and Open Synthesis",
+      "doi": "https://doi.org/10.1002/cl2.1230",
+      "url": "https://doi.org/10.1002/cl2.1230",
+      "query_label": "Research software reproducibility"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  },
+  {
+    "type": "paper_repo_transfer",
+    "confidence": 0.18,
+    "shared_signals": [
+      "paper"
+    ],
+    "paper": {
+      "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+      "doi": "https://doi.org/10.1109/access.2021.3140175",
+      "url": "https://doi.org/10.1109/access.2021.3140175",
+      "query_label": "Failure mode feedback"
+    },
+    "repo": {
+      "name": "millerasic-hash/recursive-transfer-lab",
+      "url": "https://github.com/millerasic-hash/recursive-transfer-lab",
+      "description": "Adaptive recursive transfer experiment linking OpenAlex papers and GitHub repository signals."
+    },
+    "hypothesis": "A paper-level method signal overlaps with an existing GitHub implementation surface.",
+    "next_verification": "Inspect README and tests before treating this as an implementation bridge."
+  }
+]
