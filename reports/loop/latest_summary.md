@@ -1,11 +1,11 @@
 # Recursive Transfer Loop Summary
 
-- run_id: `20260526-004145`
+- run_id: `20260526-004343`
 - papers_observed: `25`
 - github_repos_observed: `2`
 - candidates: `13`
-- github_suggestions: `2`
-- next_frequency: `30 minutes`
+- github_suggestions: `1`
+- next_frequency: `2 hours`
 
 ## Top Candidates
 
@@ -119,5 +119,4 @@
 
 ## GitHub Organization Signals
 
-- `millerasic-hash/recursive-transfer-lab` -> add_license_or_mark_private, consider_citation_cff
 - `millerasic-hash/tptd` -> add_license_or_mark_private, consider_citation_cff

@@ -1,17 +1,17 @@
 {
   "schema": "recursive-transfer-loop-state-v1",
-  "updated_at": "2026-05-25T16:41:55Z",
-  "run_id": "20260526-004145",
-  "run_count": 3,
+  "updated_at": "2026-05-25T16:43:52Z",
+  "run_id": "20260526-004343",
+  "run_count": 5,
   "papers_observed": 25,
   "github_repos_observed": 2,
   "candidate_count": 13,
   "warning_count": 0,
-  "next_frequency": "30 minutes",
+  "next_frequency": "2 hours",
   "status": "verified",
   "truth_surfaces": [
-    "reports/loop/round-20260526-004145/papers.json",
-    "reports/loop/round-20260526-004145/github_repos.json",
+    "reports/loop/round-20260526-004343/papers.json",
+    "reports/loop/round-20260526-004343/github_repos.json",
     "reports/transfer_candidates.json",
     "reports/github_inventory.json"
   ]

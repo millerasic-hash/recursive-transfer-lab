@@ -3,6 +3,7 @@
 
 The script is intentionally small and read-only toward external systems:
 - GitHub is accessed through `gh repo list`.
+- GitHub file metadata is checked through `gh api`.
 - OpenAlex is accessed through its public API.
 - Reports are written locally under reports/.
 """
@@ -173,6 +174,18 @@ def repo_text(repo: dict[str, Any]) -> str:
     )
 
 
+def repo_has_any_file(repo: dict[str, Any], paths: list[str]) -> bool:
+    full_name = repo.get("nameWithOwner")
+    if not full_name:
+        return False
+    for path in paths:
+        encoded = urllib.parse.quote(path, safe="/")
+        code, _, _ = run(["gh", "api", f"repos/{full_name}/contents/{encoded}"], timeout=20)
+        if code == 0:
+            return True
+    return False
+
+
 def normalize_work(work: dict[str, Any], query: dict[str, str], config: dict[str, Any]) -> dict[str, Any]:
     text = " ".join([work.get("display_name") or "", abstract_text(work)])
     primary = work.get("primary_location") or {}
@@ -276,6 +289,7 @@ def github_suggestions(repos: list[dict[str, Any]]) -> dict[str, Any]:
                 age_days = None
         topics = normalize_repo_topics(repo)
         license_info = repo.get("licenseInfo") or {}
+        has_citation = repo_has_any_file(repo, ["CITATION.cff", "CITATION.CFF", ".github/CITATION.cff"])
         actions = []
         if not topics:
             actions.append("add_topics")
@@ -283,7 +297,10 @@ def github_suggestions(repos: list[dict[str, Any]]) -> dict[str, Any]:
             actions.append("add_license_or_mark_private")
         if age_days is not None and age_days > 365 and not repo.get("isArchived"):
             actions.append("review_archive_status")
-        if "research" in normalize_text(repo.get("description")) or "experiment" in normalize_text(repo.get("description")):
+        if (
+            "research" in normalize_text(repo.get("description"))
+            or "experiment" in normalize_text(repo.get("description"))
+        ) and not has_citation:
             actions.append("consider_citation_cff")
         if actions:
             suggestions.append(
@@ -294,6 +311,7 @@ def github_suggestions(repos: list[dict[str, Any]]) -> dict[str, Any]:
                     "is_private": repo.get("isPrivate"),
                     "is_fork": repo.get("isFork"),
                     "topics": topics,
+                    "has_citation_cff": has_citation,
                     "actions": actions,
                 }
             )

@@ -1,6 +1,6 @@
 {
   "schema": "recursive-transfer-lab-progress-v1",
-    "status": "github_publish_ready",
+    "status": "github_published",
   "steps": [
     {
       "id": "scaffold",
@@ -20,10 +20,19 @@
             "repo": "millerasic-hash/recursive-transfer-lab",
             "visibility": "public"
         },
-    {
-      "id": "heartbeat_automation",
-      "status": "done",
-      "automation_id": "recursive-transfer-loop"
-    }
-  ]
+        {
+            "id": "heartbeat_automation",
+            "status": "done",
+            "automation_id": "recursive-transfer-loop",
+            "rrule": "FREQ=HOURLY;INTERVAL=2"
+        },
+        {
+            "id": "github_metadata_refresh",
+            "status": "done",
+            "repos_updated": [
+                "millerasic-hash/recursive-transfer-lab",
+                "millerasic-hash/tptd"
+            ]
+        }
+    ]
 }

@@ -22,5 +22,6 @@
     "remote_github_created": true,
     "github_url": "https://github.com/millerasic-hash/recursive-transfer-lab",
     "automation_id": "recursive-transfer-loop",
+    "automation_rrule": "FREQ=HOURLY;INTERVAL=2",
     "mode": "github-published"
 }
